@@ -7,8 +7,6 @@
 #include "basic.h"
 #include "Queue.h"
 
-static int size=8;
-
 vertex *traverseBreadth(Graph *g,Edge* edgeList, vertex* visited){
     Queue *front=NULL;
     Queue *end=NULL;

@@ -2,8 +2,8 @@
 // Created by surbhi on 26/05/20.
 //
 
-#ifndef GRAPHS_DIJKSHATRASPA_H
-#define GRAPHS_DIJKSHATRASPA_H
+#ifndef GRAPHS_DIJKSTRASPA_H
+#define GRAPHS_DIJKSTRASPA_H
 
 typedef struct {
     vertex dest;
@@ -12,4 +12,6 @@ typedef struct {
     vertex prev_node;
 }VertexInfo;
 
-#endif //GRAPHS_DIJKSHATRASPA_H
+void dijkstra(Graph* g,vertex v);
+
+#endif //GRAPHS_DIJKSTRASPA_H

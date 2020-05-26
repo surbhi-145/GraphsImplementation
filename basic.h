@@ -5,6 +5,8 @@
 #ifndef GRAPHS_BASIC_H
 #define GRAPHS_BASIC_H
 
+extern int size;
+
 typedef enum{FALSE, TRUE}Bool;
 
 typedef int vertex;

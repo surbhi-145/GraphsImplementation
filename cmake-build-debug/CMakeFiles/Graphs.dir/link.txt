@@ -1,2 +1,2 @@
-/usr/bin/ar qc libGraphs.a  CMakeFiles/Graphs.dir/basic.c.o CMakeFiles/Graphs.dir/DepthFirst.c.o CMakeFiles/Graphs.dir/main.c.o CMakeFiles/Graphs.dir/BreadthFirst.c.o CMakeFiles/Graphs.dir/Queue.c.o CMakeFiles/Graphs.dir/TopologicalSort.c.o CMakeFiles/Graphs.dir/DijkshatraSPA.c.o
+/usr/bin/ar qc libGraphs.a  CMakeFiles/Graphs.dir/basic.c.o CMakeFiles/Graphs.dir/DepthFirst.c.o CMakeFiles/Graphs.dir/main.c.o CMakeFiles/Graphs.dir/BreadthFirst.c.o CMakeFiles/Graphs.dir/Queue.c.o CMakeFiles/Graphs.dir/TopologicalSort.c.o CMakeFiles/Graphs.dir/DijkstraSPA.c.o
 /usr/bin/ranlib libGraphs.a

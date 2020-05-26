@@ -7,7 +7,6 @@
 #include "basic.h"
 #include "DepthFirst.h"
 
-static int size =8;
 
 vertex *traverseDepth(Graph *g,Edge* ptr,vertex* visited){
     ptr=ptr->next_edge;

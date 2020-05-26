@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include "basic.h"
 
-static int size =8;
+int size=4;
 
 Edge *createNode(int vertex,int weight){
     Edge *newEdge=(Edge*)malloc(sizeof(Edge));
@@ -193,7 +193,7 @@ void printGraph(Graph* g){
         if(ptr->next_edge!=NULL){
             ptr=ptr->next_edge;
             while(ptr!=NULL){
-                printf("(%d--->%d) ",src,ptr->v);
+                printf("(%d-- %d ->%d) ",src,ptr->weight,ptr->v);
                 ptr=ptr->next_edge;
             }
             printf("\n");

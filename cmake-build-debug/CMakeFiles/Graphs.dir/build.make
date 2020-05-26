@@ -135,18 +135,18 @@ CMakeFiles/Graphs.dir/TopologicalSort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/TopologicalSort.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/TopologicalSort.c -o CMakeFiles/Graphs.dir/TopologicalSort.c.s
 
-CMakeFiles/Graphs.dir/DijkshatraSPA.c.o: CMakeFiles/Graphs.dir/flags.make
-CMakeFiles/Graphs.dir/DijkshatraSPA.c.o: ../DijkshatraSPA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Graphs.dir/DijkshatraSPA.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Graphs.dir/DijkshatraSPA.c.o   -c /home/surbhi/CProjects/Graphs/DijkshatraSPA.c
+CMakeFiles/Graphs.dir/DijkstraSPA.c.o: CMakeFiles/Graphs.dir/flags.make
+CMakeFiles/Graphs.dir/DijkstraSPA.c.o: ../DijkstraSPA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Graphs.dir/DijkstraSPA.c.o   -c /home/surbhi/CProjects/Graphs/DijkstraSPA.c
 
-CMakeFiles/Graphs.dir/DijkshatraSPA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Graphs.dir/DijkshatraSPA.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/surbhi/CProjects/Graphs/DijkshatraSPA.c > CMakeFiles/Graphs.dir/DijkshatraSPA.c.i
+CMakeFiles/Graphs.dir/DijkstraSPA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Graphs.dir/DijkstraSPA.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/surbhi/CProjects/Graphs/DijkstraSPA.c > CMakeFiles/Graphs.dir/DijkstraSPA.c.i
 
-CMakeFiles/Graphs.dir/DijkshatraSPA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/DijkshatraSPA.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/DijkshatraSPA.c -o CMakeFiles/Graphs.dir/DijkshatraSPA.c.s
+CMakeFiles/Graphs.dir/DijkstraSPA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/DijkstraSPA.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/DijkstraSPA.c -o CMakeFiles/Graphs.dir/DijkstraSPA.c.s
 
 # Object files for target Graphs
 Graphs_OBJECTS = \
@@ -156,7 +156,7 @@ Graphs_OBJECTS = \
 "CMakeFiles/Graphs.dir/BreadthFirst.c.o" \
 "CMakeFiles/Graphs.dir/Queue.c.o" \
 "CMakeFiles/Graphs.dir/TopologicalSort.c.o" \
-"CMakeFiles/Graphs.dir/DijkshatraSPA.c.o"
+"CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
 
 # External object files for target Graphs
 Graphs_EXTERNAL_OBJECTS =
@@ -167,7 +167,7 @@ libGraphs.a: CMakeFiles/Graphs.dir/main.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/BreadthFirst.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/Queue.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/TopologicalSort.c.o
-libGraphs.a: CMakeFiles/Graphs.dir/DijkshatraSPA.c.o
+libGraphs.a: CMakeFiles/Graphs.dir/DijkstraSPA.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/build.make
 libGraphs.a: CMakeFiles/Graphs.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libGraphs.a"

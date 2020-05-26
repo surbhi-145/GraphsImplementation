@@ -7,7 +7,6 @@
 #include "basic.h"
 #include "TopologicalSort.h"
 
-static int size=8;
 
 int findPredIndex(Pred* pred, int vertex){
     int i=0;

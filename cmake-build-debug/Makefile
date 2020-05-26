@@ -177,32 +177,32 @@ DepthFirst.c.s:
 	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DepthFirst.c.s
 .PHONY : DepthFirst.c.s
 
-DijkshatraSPA.o: DijkshatraSPA.c.o
+DijkstraSPA.o: DijkstraSPA.c.o
 
-.PHONY : DijkshatraSPA.o
+.PHONY : DijkstraSPA.o
 
 # target to build an object file
-DijkshatraSPA.c.o:
-	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkshatraSPA.c.o
-.PHONY : DijkshatraSPA.c.o
+DijkstraSPA.c.o:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkstraSPA.c.o
+.PHONY : DijkstraSPA.c.o
 
-DijkshatraSPA.i: DijkshatraSPA.c.i
+DijkstraSPA.i: DijkstraSPA.c.i
 
-.PHONY : DijkshatraSPA.i
+.PHONY : DijkstraSPA.i
 
 # target to preprocess a source file
-DijkshatraSPA.c.i:
-	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkshatraSPA.c.i
-.PHONY : DijkshatraSPA.c.i
+DijkstraSPA.c.i:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkstraSPA.c.i
+.PHONY : DijkstraSPA.c.i
 
-DijkshatraSPA.s: DijkshatraSPA.c.s
+DijkstraSPA.s: DijkstraSPA.c.s
 
-.PHONY : DijkshatraSPA.s
+.PHONY : DijkstraSPA.s
 
 # target to generate assembly for a file
-DijkshatraSPA.c.s:
-	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkshatraSPA.c.s
-.PHONY : DijkshatraSPA.c.s
+DijkstraSPA.c.s:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkstraSPA.c.s
+.PHONY : DijkstraSPA.c.s
 
 Queue.o: Queue.c.o
 
@@ -327,9 +327,9 @@ help:
 	@echo "... DepthFirst.o"
 	@echo "... DepthFirst.i"
 	@echo "... DepthFirst.s"
-	@echo "... DijkshatraSPA.o"
-	@echo "... DijkshatraSPA.i"
-	@echo "... DijkshatraSPA.s"
+	@echo "... DijkstraSPA.o"
+	@echo "... DijkstraSPA.i"
+	@echo "... DijkstraSPA.s"
 	@echo "... Queue.o"
 	@echo "... Queue.i"
 	@echo "... Queue.s"

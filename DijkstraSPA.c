@@ -5,9 +5,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "basic.h"
-#include "DijkshatraSPA.h"
-
-static int size=8;
+#include "DijkstraSPA.h"
 
 int getMinIndex(VertexInfo* vertList){
     int min=INT_MAX;
@@ -36,15 +34,41 @@ int findIndex(VertexInfo* vertList, int vertex){
     return i;
 }
 
-void dijkshatra(Graph* g,vertex v){
+void printPath(VertexInfo* vertList, int index){
+    int i=findIndex(vertList,vertList[index].prev_node);
+    if(vertList[i].prev_node==vertList[i].dest){
+        printf("%d--> ",vertList[i].dest);
+    }else{
+        printPath(vertList,i);
+        printf("%d--> ",vertList[i].dest);
+    }
+}
+
+void printDijkstra(VertexInfo* vertList){
+
+    printf("--------------------------\n");
+    for(int i=0; i<size; i++) {
+        if (vertList[i].prev_node != vertList[i].dest) {
+            printf("Cost : %d Path : ", vertList[i].distance);
+            printPath(vertList, i);
+            printf("%d\n", vertList[i].dest);
+        }
+    }
+    printf("--------------------------\n");
+}
+
+void dijkstra(Graph* g,vertex v){
+
+    //check for connected graph
 
     Graph *ptr=g;
     VertexInfo *vertList=(VertexInfo*)malloc(size*(sizeof(VertexInfo)));
-
+    printf("%d\n",size);
     for(int i=0; i<size; i++){
         vertList[i].dest=ptr->EdgeList->v;
         if(ptr->EdgeList->v==v){
             vertList[i].distance=0;
+            vertList[i].prev_node=v;
             vertList[i].found=0;
         }else{
             vertList[i].found=0;
@@ -57,7 +81,6 @@ void dijkshatra(Graph* g,vertex v){
     while(found_count<size) {
         int index=getMinIndex(vertList);
         found_count+=1;
-        vertList[index].prev_node=v;
         v=vertList[index].dest;
         vertList[index].found=1;
         Edge *edgeList=findList(g,v);
@@ -67,10 +90,12 @@ void dijkshatra(Graph* g,vertex v){
             if(vertList[i].found==0) {
                 int distance = vertList[index].distance + edgeList->weight;
                 if (distance < vertList[i].distance) {
+                    vertList[i].prev_node=v;
                     vertList[i].distance = distance;
                 }
             }
             edgeList=edgeList->next_edge;
         }
     }
+    printDijkstra(vertList);
 }
