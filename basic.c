@@ -58,9 +58,9 @@ Graph *insertNode(Graph *g,int vertex, int weight){
             while (ptr->next_src!=NULL)
                 ptr=ptr->next_src;
             ptr->next_src=(Graph*)malloc(sizeof(Graph));
-            g=g->next_src;
-            g->next_src=NULL;
-            g->EdgeList=createNode(vertex,weight);
+            ptr=ptr->next_src;
+            ptr->next_src=NULL;
+            ptr->EdgeList=createNode(vertex,weight);
         }
     }
     return g;
@@ -187,6 +187,8 @@ vertex *insertVisited(vertex* visited, vertex v){
 
 void printGraph(Graph* g){
 
+    printf("--------------------------\n");
+
     for(int i=0; i<size; i++){
         vertex src=g->EdgeList->v;
         Edge *ptr=g->EdgeList;
@@ -200,4 +202,6 @@ void printGraph(Graph* g){
         }
         g=g->next_src;
     }
+
+    printf("--------------------------\n");
 }

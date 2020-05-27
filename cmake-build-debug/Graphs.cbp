@@ -82,6 +82,12 @@
 		<Unit filename="/home/surbhi/CProjects/Graphs/BreadthFirst.h">
 			<Option target="Graphs"/>
 		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/Connectivity.c">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/Connectivity.h">
+			<Option target="Graphs"/>
+		</Unit>
 		<Unit filename="/home/surbhi/CProjects/Graphs/DepthFirst.c">
 			<Option target="Graphs"/>
 		</Unit>

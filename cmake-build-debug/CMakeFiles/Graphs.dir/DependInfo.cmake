@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/surbhi/CProjects/Graphs/BreadthFirst.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/BreadthFirst.c.o"
+  "/home/surbhi/CProjects/Graphs/Connectivity.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/Connectivity.c.o"
   "/home/surbhi/CProjects/Graphs/DepthFirst.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/DepthFirst.c.o"
   "/home/surbhi/CProjects/Graphs/DijkstraSPA.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
   "/home/surbhi/CProjects/Graphs/Queue.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/Queue.c.o"

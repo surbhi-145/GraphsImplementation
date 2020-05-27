@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "basic.h"
+#include "Connectivity.h"
 #include "DijkstraSPA.h"
 
 int getMinIndex(VertexInfo* vertList){
@@ -59,43 +60,45 @@ void printDijkstra(VertexInfo* vertList){
 
 void dijkstra(Graph* g,vertex v){
 
-    //check for connected graph
-
-    Graph *ptr=g;
-    VertexInfo *vertList=(VertexInfo*)malloc(size*(sizeof(VertexInfo)));
-    printf("%d\n",size);
-    for(int i=0; i<size; i++){
-        vertList[i].dest=ptr->EdgeList->v;
-        if(ptr->EdgeList->v==v){
-            vertList[i].distance=0;
-            vertList[i].prev_node=v;
-            vertList[i].found=0;
-        }else{
-            vertList[i].found=0;
-            vertList[i].distance=INT_MAX;
-        }
-        ptr=ptr->next_src;
-    }
-
-    int found_count=0;
-    while(found_count<size) {
-        int index=getMinIndex(vertList);
-        found_count+=1;
-        v=vertList[index].dest;
-        vertList[index].found=1;
-        Edge *edgeList=findList(g,v);
-        edgeList=edgeList->next_edge;
-        while (edgeList!=NULL){
-            int i=findIndex(vertList,edgeList->v);
-            if(vertList[i].found==0) {
-                int distance = vertList[index].distance + edgeList->weight;
-                if (distance < vertList[i].distance) {
-                    vertList[i].prev_node=v;
-                    vertList[i].distance = distance;
-                }
+    if(isConnected(g)==TRUE) {
+        Graph *ptr = g;
+        VertexInfo *vertList = (VertexInfo *) malloc(size * (sizeof(VertexInfo)));
+        printf("%d\n", size);
+        for (int i = 0; i < size; i++) {
+            vertList[i].dest = ptr->EdgeList->v;
+            if (ptr->EdgeList->v == v) {
+                vertList[i].distance = 0;
+                vertList[i].prev_node = v;
+                vertList[i].found = 0;
+            } else {
+                vertList[i].found = 0;
+                vertList[i].distance = INT_MAX;
             }
-            edgeList=edgeList->next_edge;
+            ptr = ptr->next_src;
         }
+
+        int found_count = 0;
+        while (found_count < size) {
+            int index = getMinIndex(vertList);
+            found_count += 1;
+            v = vertList[index].dest;
+            vertList[index].found = 1;
+            Edge *edgeList = findList(g, v);
+            edgeList = edgeList->next_edge;
+            while (edgeList != NULL) {
+                int i = findIndex(vertList, edgeList->v);
+                if (vertList[i].found == 0) {
+                    int distance = vertList[index].distance + edgeList->weight;
+                    if (distance < vertList[i].distance) {
+                        vertList[i].prev_node = v;
+                        vertList[i].distance = distance;
+                    }
+                }
+                edgeList = edgeList->next_edge;
+            }
+        }
+        printDijkstra(vertList);
+    }else{
+        printf("Disconnected Graph. Cannot find shortest path to all nodes.");
     }
-    printDijkstra(vertList);
 }

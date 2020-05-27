@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Graphs.dir/BreadthFirst.c.o"
+  "CMakeFiles/Graphs.dir/Connectivity.c.o"
   "CMakeFiles/Graphs.dir/DepthFirst.c.o"
   "CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
   "CMakeFiles/Graphs.dir/Queue.c.o"

@@ -46,3 +46,43 @@ void BreadthFirstTraverse(Graph* g){
     printf("\n");
 
 }
+
+vertex *traverseBreadthSearch(Graph *g,Edge* ptr,vertex* visited, Bool* ans,vertex v){
+    ptr=ptr->next_edge;
+    while(ptr!=NULL){
+        if(hasVisited(visited,ptr->v)==0){
+            if(ptr->v==v){
+                *ans=TRUE;
+            }else {
+                visited = insertVisited(visited, ptr->v);
+                Edge *list = findList(g, ptr->v);
+                visited = traverseBreadthSearch(g, list, visited, ans,v);
+            }
+        }
+        ptr=ptr->next_edge;
+    }
+    return visited;
+}
+
+Bool BreadthFirstSearch(Graph*g , vertex v){
+
+    Bool ans = FALSE;
+
+    vertex *visited = (vertex *) malloc(size * sizeof(vertex));
+    for (int i = 0; i < size; i++)
+        visited[i] = 0;
+
+    for (int j = 0; j < size && ans == FALSE; j++) {
+
+        if (hasVisited(visited, g->EdgeList->v) == 0) {
+            if (g->EdgeList->v == v)
+                ans = TRUE;
+            else {
+                visited = insertVisited(visited, g->EdgeList->v);
+                visited = traverseBreadthSearch(g, g->EdgeList, visited, &ans,v);
+            }
+        }
+        g = g->next_src;
+    }
+    return ans;
+}

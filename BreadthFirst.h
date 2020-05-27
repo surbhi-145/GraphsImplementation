@@ -6,5 +6,6 @@
 #define GRAPHS_BREADTHFIRST_H
 
 void BreadthFirstTraverse(Graph* g);
+Bool BreadthFirstSearch(Graph*g , vertex v);
 
 #endif //GRAPHS_BREADTHFIRST_H

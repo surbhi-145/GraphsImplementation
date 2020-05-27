@@ -148,6 +148,19 @@ CMakeFiles/Graphs.dir/DijkstraSPA.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/DijkstraSPA.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/DijkstraSPA.c -o CMakeFiles/Graphs.dir/DijkstraSPA.c.s
 
+CMakeFiles/Graphs.dir/Connectivity.c.o: CMakeFiles/Graphs.dir/flags.make
+CMakeFiles/Graphs.dir/Connectivity.c.o: ../Connectivity.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Graphs.dir/Connectivity.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Graphs.dir/Connectivity.c.o   -c /home/surbhi/CProjects/Graphs/Connectivity.c
+
+CMakeFiles/Graphs.dir/Connectivity.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Graphs.dir/Connectivity.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/surbhi/CProjects/Graphs/Connectivity.c > CMakeFiles/Graphs.dir/Connectivity.c.i
+
+CMakeFiles/Graphs.dir/Connectivity.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/Connectivity.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/Connectivity.c -o CMakeFiles/Graphs.dir/Connectivity.c.s
+
 # Object files for target Graphs
 Graphs_OBJECTS = \
 "CMakeFiles/Graphs.dir/basic.c.o" \
@@ -156,7 +169,8 @@ Graphs_OBJECTS = \
 "CMakeFiles/Graphs.dir/BreadthFirst.c.o" \
 "CMakeFiles/Graphs.dir/Queue.c.o" \
 "CMakeFiles/Graphs.dir/TopologicalSort.c.o" \
-"CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
+"CMakeFiles/Graphs.dir/DijkstraSPA.c.o" \
+"CMakeFiles/Graphs.dir/Connectivity.c.o"
 
 # External object files for target Graphs
 Graphs_EXTERNAL_OBJECTS =
@@ -168,9 +182,10 @@ libGraphs.a: CMakeFiles/Graphs.dir/BreadthFirst.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/Queue.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/TopologicalSort.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/DijkstraSPA.c.o
+libGraphs.a: CMakeFiles/Graphs.dir/Connectivity.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/build.make
 libGraphs.a: CMakeFiles/Graphs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libGraphs.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libGraphs.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Graphs.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Graphs.dir/link.txt --verbose=$(VERBOSE)
 

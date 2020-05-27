@@ -8,6 +8,7 @@
 #include "BreadthFirst.h"
 #include "TopologicalSort.h"
 #include "DijkstraSPA.h"
+#include "Connectivity.h"
 
 int main(){
     size=4;
@@ -19,6 +20,8 @@ int main(){
     g=insertEdge(g,1,4,5);
     g=insertEdge(g,2,4,10);
     g=insertEdge(g,4,3,10);
-    dijkstra(g,1);
+    printf("%d\n",isConnected(g));
+    g=insertNode(g,5,0);
+    printf("%d\n",isConnected(g));
     return 0;
 }

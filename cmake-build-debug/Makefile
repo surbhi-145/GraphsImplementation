@@ -150,6 +150,33 @@ BreadthFirst.c.s:
 	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/BreadthFirst.c.s
 .PHONY : BreadthFirst.c.s
 
+Connectivity.o: Connectivity.c.o
+
+.PHONY : Connectivity.o
+
+# target to build an object file
+Connectivity.c.o:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/Connectivity.c.o
+.PHONY : Connectivity.c.o
+
+Connectivity.i: Connectivity.c.i
+
+.PHONY : Connectivity.i
+
+# target to preprocess a source file
+Connectivity.c.i:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/Connectivity.c.i
+.PHONY : Connectivity.c.i
+
+Connectivity.s: Connectivity.c.s
+
+.PHONY : Connectivity.s
+
+# target to generate assembly for a file
+Connectivity.c.s:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/Connectivity.c.s
+.PHONY : Connectivity.c.s
+
 DepthFirst.o: DepthFirst.c.o
 
 .PHONY : DepthFirst.o
@@ -324,6 +351,9 @@ help:
 	@echo "... BreadthFirst.o"
 	@echo "... BreadthFirst.i"
 	@echo "... BreadthFirst.s"
+	@echo "... Connectivity.o"
+	@echo "... Connectivity.i"
+	@echo "... Connectivity.s"
 	@echo "... DepthFirst.o"
 	@echo "... DepthFirst.i"
 	@echo "... DepthFirst.s"

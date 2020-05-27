@@ -6,5 +6,6 @@
 #define GRAPHS_DEPTHFIRST_H
 
 void DepthFirstTraverse(Graph* g);
+Bool DepthFirstSearch(Graph*g , vertex v);
 
 #endif //GRAPHS_DEPTHFIRST_H
