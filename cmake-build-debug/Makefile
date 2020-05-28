@@ -123,6 +123,60 @@ Graphs/fast:
 	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/build
 .PHONY : Graphs/fast
 
+AllPairSP.o: AllPairSP.c.o
+
+.PHONY : AllPairSP.o
+
+# target to build an object file
+AllPairSP.c.o:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/AllPairSP.c.o
+.PHONY : AllPairSP.c.o
+
+AllPairSP.i: AllPairSP.c.i
+
+.PHONY : AllPairSP.i
+
+# target to preprocess a source file
+AllPairSP.c.i:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/AllPairSP.c.i
+.PHONY : AllPairSP.c.i
+
+AllPairSP.s: AllPairSP.c.s
+
+.PHONY : AllPairSP.s
+
+# target to generate assembly for a file
+AllPairSP.c.s:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/AllPairSP.c.s
+.PHONY : AllPairSP.c.s
+
+AllPaths.o: AllPaths.c.o
+
+.PHONY : AllPaths.o
+
+# target to build an object file
+AllPaths.c.o:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/AllPaths.c.o
+.PHONY : AllPaths.c.o
+
+AllPaths.i: AllPaths.c.i
+
+.PHONY : AllPaths.i
+
+# target to preprocess a source file
+AllPaths.c.i:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/AllPaths.c.i
+.PHONY : AllPaths.c.i
+
+AllPaths.s: AllPaths.c.s
+
+.PHONY : AllPaths.s
+
+# target to generate assembly for a file
+AllPaths.c.s:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/AllPaths.c.s
+.PHONY : AllPaths.c.s
+
 BreadthFirst.o: BreadthFirst.c.o
 
 .PHONY : BreadthFirst.o
@@ -203,6 +257,33 @@ DepthFirst.s: DepthFirst.c.s
 DepthFirst.c.s:
 	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DepthFirst.c.s
 .PHONY : DepthFirst.c.s
+
+DetectCycle.o: DetectCycle.c.o
+
+.PHONY : DetectCycle.o
+
+# target to build an object file
+DetectCycle.c.o:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DetectCycle.c.o
+.PHONY : DetectCycle.c.o
+
+DetectCycle.i: DetectCycle.c.i
+
+.PHONY : DetectCycle.i
+
+# target to preprocess a source file
+DetectCycle.c.i:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DetectCycle.c.i
+.PHONY : DetectCycle.c.i
+
+DetectCycle.s: DetectCycle.c.s
+
+.PHONY : DetectCycle.s
+
+# target to generate assembly for a file
+DetectCycle.c.s:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DetectCycle.c.s
+.PHONY : DetectCycle.c.s
 
 DijkstraSPA.o: DijkstraSPA.c.o
 
@@ -348,6 +429,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Graphs"
+	@echo "... AllPairSP.o"
+	@echo "... AllPairSP.i"
+	@echo "... AllPairSP.s"
+	@echo "... AllPaths.o"
+	@echo "... AllPaths.i"
+	@echo "... AllPaths.s"
 	@echo "... BreadthFirst.o"
 	@echo "... BreadthFirst.i"
 	@echo "... BreadthFirst.s"
@@ -357,6 +444,9 @@ help:
 	@echo "... DepthFirst.o"
 	@echo "... DepthFirst.i"
 	@echo "... DepthFirst.s"
+	@echo "... DetectCycle.o"
+	@echo "... DetectCycle.i"
+	@echo "... DetectCycle.s"
 	@echo "... DijkstraSPA.o"
 	@echo "... DijkstraSPA.i"
 	@echo "... DijkstraSPA.s"

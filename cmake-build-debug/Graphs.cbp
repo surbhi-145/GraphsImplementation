@@ -76,6 +76,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/surbhi/CProjects/Graphs/AllPairSP.c">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/AllPairSP.h">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/AllPaths.c">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/AllPaths.h">
+			<Option target="Graphs"/>
+		</Unit>
 		<Unit filename="/home/surbhi/CProjects/Graphs/BreadthFirst.c">
 			<Option target="Graphs"/>
 		</Unit>
@@ -92,6 +104,12 @@
 			<Option target="Graphs"/>
 		</Unit>
 		<Unit filename="/home/surbhi/CProjects/Graphs/DepthFirst.h">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/DetectCycle.c">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/DetectCycle.h">
 			<Option target="Graphs"/>
 		</Unit>
 		<Unit filename="/home/surbhi/CProjects/Graphs/DijkstraSPA.c">
