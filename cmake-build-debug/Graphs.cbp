@@ -118,6 +118,12 @@
 		<Unit filename="/home/surbhi/CProjects/Graphs/DijkstraSPA.h">
 			<Option target="Graphs"/>
 		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/PrimsAlgo.c">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="/home/surbhi/CProjects/Graphs/PrimsAlgo.h">
+			<Option target="Graphs"/>
+		</Unit>
 		<Unit filename="/home/surbhi/CProjects/Graphs/Queue.c">
 			<Option target="Graphs"/>
 		</Unit>

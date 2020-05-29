@@ -84,5 +84,7 @@ Bool BreadthFirstSearch(Graph*g , vertex v){
         }
         g = g->next_src;
     }
+
+    free(visited);
     return ans;
 }

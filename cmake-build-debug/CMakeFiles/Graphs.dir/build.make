@@ -200,6 +200,19 @@ CMakeFiles/Graphs.dir/AllPaths.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/AllPaths.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/AllPaths.c -o CMakeFiles/Graphs.dir/AllPaths.c.s
 
+CMakeFiles/Graphs.dir/PrimsAlgo.c.o: CMakeFiles/Graphs.dir/flags.make
+CMakeFiles/Graphs.dir/PrimsAlgo.c.o: ../PrimsAlgo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Graphs.dir/PrimsAlgo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Graphs.dir/PrimsAlgo.c.o   -c /home/surbhi/CProjects/Graphs/PrimsAlgo.c
+
+CMakeFiles/Graphs.dir/PrimsAlgo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Graphs.dir/PrimsAlgo.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/surbhi/CProjects/Graphs/PrimsAlgo.c > CMakeFiles/Graphs.dir/PrimsAlgo.c.i
+
+CMakeFiles/Graphs.dir/PrimsAlgo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Graphs.dir/PrimsAlgo.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/surbhi/CProjects/Graphs/PrimsAlgo.c -o CMakeFiles/Graphs.dir/PrimsAlgo.c.s
+
 # Object files for target Graphs
 Graphs_OBJECTS = \
 "CMakeFiles/Graphs.dir/basic.c.o" \
@@ -212,7 +225,8 @@ Graphs_OBJECTS = \
 "CMakeFiles/Graphs.dir/Connectivity.c.o" \
 "CMakeFiles/Graphs.dir/AllPairSP.c.o" \
 "CMakeFiles/Graphs.dir/DetectCycle.c.o" \
-"CMakeFiles/Graphs.dir/AllPaths.c.o"
+"CMakeFiles/Graphs.dir/AllPaths.c.o" \
+"CMakeFiles/Graphs.dir/PrimsAlgo.c.o"
 
 # External object files for target Graphs
 Graphs_EXTERNAL_OBJECTS =
@@ -228,9 +242,10 @@ libGraphs.a: CMakeFiles/Graphs.dir/Connectivity.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/AllPairSP.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/DetectCycle.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/AllPaths.c.o
+libGraphs.a: CMakeFiles/Graphs.dir/PrimsAlgo.c.o
 libGraphs.a: CMakeFiles/Graphs.dir/build.make
 libGraphs.a: CMakeFiles/Graphs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libGraphs.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C static library libGraphs.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Graphs.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Graphs.dir/link.txt --verbose=$(VERBOSE)
 

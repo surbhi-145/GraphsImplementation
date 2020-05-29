@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Graphs.dir/DepthFirst.c.o"
   "CMakeFiles/Graphs.dir/DetectCycle.c.o"
   "CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
+  "CMakeFiles/Graphs.dir/PrimsAlgo.c.o"
   "CMakeFiles/Graphs.dir/Queue.c.o"
   "CMakeFiles/Graphs.dir/TopologicalSort.c.o"
   "CMakeFiles/Graphs.dir/basic.c.o"

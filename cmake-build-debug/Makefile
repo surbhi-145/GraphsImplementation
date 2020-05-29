@@ -312,6 +312,33 @@ DijkstraSPA.c.s:
 	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/DijkstraSPA.c.s
 .PHONY : DijkstraSPA.c.s
 
+PrimsAlgo.o: PrimsAlgo.c.o
+
+.PHONY : PrimsAlgo.o
+
+# target to build an object file
+PrimsAlgo.c.o:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/PrimsAlgo.c.o
+.PHONY : PrimsAlgo.c.o
+
+PrimsAlgo.i: PrimsAlgo.c.i
+
+.PHONY : PrimsAlgo.i
+
+# target to preprocess a source file
+PrimsAlgo.c.i:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/PrimsAlgo.c.i
+.PHONY : PrimsAlgo.c.i
+
+PrimsAlgo.s: PrimsAlgo.c.s
+
+.PHONY : PrimsAlgo.s
+
+# target to generate assembly for a file
+PrimsAlgo.c.s:
+	$(MAKE) -f CMakeFiles/Graphs.dir/build.make CMakeFiles/Graphs.dir/PrimsAlgo.c.s
+.PHONY : PrimsAlgo.c.s
+
 Queue.o: Queue.c.o
 
 .PHONY : Queue.o
@@ -450,6 +477,9 @@ help:
 	@echo "... DijkstraSPA.o"
 	@echo "... DijkstraSPA.i"
 	@echo "... DijkstraSPA.s"
+	@echo "... PrimsAlgo.o"
+	@echo "... PrimsAlgo.i"
+	@echo "... PrimsAlgo.s"
 	@echo "... Queue.o"
 	@echo "... Queue.i"
 	@echo "... Queue.s"

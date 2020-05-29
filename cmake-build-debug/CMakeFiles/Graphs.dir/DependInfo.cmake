@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/surbhi/CProjects/Graphs/DepthFirst.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/DepthFirst.c.o"
   "/home/surbhi/CProjects/Graphs/DetectCycle.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/DetectCycle.c.o"
   "/home/surbhi/CProjects/Graphs/DijkstraSPA.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/DijkstraSPA.c.o"
+  "/home/surbhi/CProjects/Graphs/PrimsAlgo.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/PrimsAlgo.c.o"
   "/home/surbhi/CProjects/Graphs/Queue.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/Queue.c.o"
   "/home/surbhi/CProjects/Graphs/TopologicalSort.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/TopologicalSort.c.o"
   "/home/surbhi/CProjects/Graphs/basic.c" "/home/surbhi/CProjects/Graphs/cmake-build-debug/CMakeFiles/Graphs.dir/basic.c.o"
