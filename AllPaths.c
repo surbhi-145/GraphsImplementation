@@ -29,11 +29,14 @@ void traverseFind(Graph* g,vertex src,vertex dest, vertex* visited, vertex* path
             if(list->v==dest){
                 printAtoB(currPath,dest);
             }else{
-                visited=insertVisited(visited,list->v);
+                vertex* curr_visited=(vertex*)malloc(size*sizeof(vertex));
+                for(int i=0; i<size; i++)
+                    curr_visited[i]=visited[i];
+                curr_visited=insertVisited(curr_visited,list->v);
                 vertex *newPath=(vertex*)malloc((size+1)*sizeof(vertex));
                 for(int i=0; i<size+1; i++)
                     newPath[i]=currPath[i];
-                traverseFind(g,list->v,dest,visited,newPath);
+                traverseFind(g,list->v,dest,curr_visited,newPath);
                 free(newPath);
             }
         }

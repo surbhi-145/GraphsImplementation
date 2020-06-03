@@ -37,6 +37,7 @@ int main(){
     g=insertEdge(g,4,5,2);
     g=insertEdge(g,5,4,2);
     //printGraph(g);
-    MinSpanningTree(g);
+    //MinSpanningTree(g);
+    printALlPaths(g,0,1);
     return 0;
 }
